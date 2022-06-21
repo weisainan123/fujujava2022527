@@ -3,7 +3,7 @@ package Test;
 //封装
 public class VarEncapsulation {
     public static void main(String[] args) {
-        //如果要使用快捷键alt+r,需要先配置主类
+        //运行程序 如果要使用快捷键alt+r,需要先配置主类
         //第一次，我们是用鼠标点击形式运算程序，后面就可以使用快捷键了
         Person6 person6 = new Person6();
         person6.setName("milan米拉秘密拉姆");

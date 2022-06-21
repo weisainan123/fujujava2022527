@@ -1,9 +1,10 @@
 package Test;
 
 //封装与构造器
+//将构造器和setXxx结合
 public class VarEncapsulationConstructor {
     public static void main(String[] args) {
-        Person7 person7 = new Person7("张三大大大大大大大大", 99, 100000.33);
+        Person7 person7 = new Person7("张三大大大大大大大大", 99, 100000.33);//使用构造器指定属性
         System.out.println("=========张三大大大大======");
         System.out.println(person7.info());
     }
@@ -23,7 +24,7 @@ class Person7 {
     public Person7(String name, int age, double salary) {
         this.name = name;
         this.age = age;
-        this.salary = salary;//在这里  构造器访问可以绕过姓名校验
+        this.salary = salary;//截至到这里  通过构造器访问可以绕过姓名校验
         //解决上面问题 可以将set写在构造器中
         setAge(age);
         setName(name);
@@ -83,7 +84,7 @@ class Person7 {
 快速格式化代码 ctrl+alt+l
 快速运行自己的程序 自己定义alt+r
 查看一个类的层级关系 ctrl+H
-将光标防砸一个方法上，输入ctrl+B 可以定位到方法
+将光标防在一个方法上，输入ctrl+B 可以定位到方法
 自动分配变量名，通过在后面加  .var
  */
 
